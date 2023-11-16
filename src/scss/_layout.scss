@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "tintin";
+  src: url("../fonts/tintin.woff2") format("woff2"),
+    url("../fonts/tintin.woff") format("woff");
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -12,6 +18,7 @@ section {
   // align-items: center;
   height: 100%;
   width: calc(100% / 11);
+  position: relative;
 }
 
 * {
@@ -23,21 +30,28 @@ body {
 }
 
 .button-top {
-  position: relative;
-  top: -890px;
-  right: -1500px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  z-index: 2;
   font-family: "orgovan-rounded-web", sans-serif;
   font-weight: 400;
   font-style: normal;
+  padding: 12px;
+  font-size: 28px;
+  border-radius: 6px;
 }
 
 .button-bottom {
-  position: relative;
-  bottom: 100px;
-  right: -1500px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
   font-family: "orgovan-rounded-web", sans-serif;
   font-weight: 400;
   font-style: normal;
+  padding: 12px;
+  font-size: 28px;
+  border-radius: 6px;
 }
 
 .container .background-img {
@@ -45,4 +59,8 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,0 +1,22 @@
+.info-final {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 50%;
+  transform: translate(-55%);
+}
+
+.button-buy {
+  position: absolute;
+  bottom: 100px;
+  left: 35%;
+  z-index: 2;
+  font-family: "orgovan-rounded-web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 12px;
+  font-size: 28px;
+  border-radius: 6px;
+}
