@@ -20,6 +20,7 @@ section {
   height: 100%;
   width: calc(100% / 11);
   position: relative;
+  overflow: hidden;
 }
 
 * {
@@ -63,7 +64,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  // display: none;
 }
 
 @keyframes scaleAnimation {
@@ -83,7 +84,7 @@ body {
   height: 85px;
   z-index: 3;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.75s;
   pointer-events: none;
 }
 

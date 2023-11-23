@@ -1,7 +1,7 @@
 .element-one {
   width: 220px;
-  bottom: 140px;
-  left: 190px;
+  top: calc(50% - 10px);
+  left: calc(50% - 680px);
 }
 
 .element-two {
@@ -11,13 +11,12 @@
 }
 
 .buble-one {
-  bottom: 200px;
-  left: 330px;
-  overflow: hidden;
+  top: calc(50% - -190px);
+  left: calc(50% - 535px);
 }
 
 .buble-two {
-  top: 410px;
-  right: 225px;
+  top: calc(50% - 50px);
+  left: calc(50% - -100px);
   overflow: hidden;
 }
