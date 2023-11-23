@@ -45,7 +45,7 @@ buttons.forEach(function (button, index) {
   if (section) {
     button.addEventListener("click", function () {
       document.querySelector(section).classList.remove("hidden");
-      gsap.to("html", {
+      gsap.to(window, {
         duration: 1,
         scrollTo: {
           x: section,
@@ -54,4 +54,11 @@ buttons.forEach(function (button, index) {
       });
     });
   }
+});
+
+var elementOne = document.querySelector(".element-one");
+var bubbleOne = document.querySelector(".buble-one");
+
+elementOne.addEventListener("click", function () {
+  bubbleOne.classList.add("is-visible");
 });
